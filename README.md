@@ -15,4 +15,4 @@ mvn clean install
 
 Execute the jar and follow the prompts:
 
-java -jar ./target/data-calculator-0.0.1-SNAPSHOT.jar
+java -jar ./target\soccer-0.0.1-SNAPSHOT.jar
