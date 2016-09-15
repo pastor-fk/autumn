@@ -18,7 +18,8 @@ public class Soccer {
     public static void main(String... args) {
 
         // String fileName = "c://victor/lines.txt";
-        final String homeDir = System.getProperty("user.dir");
+        final String homeDir = System.getProperty("user.dir");// you can also
+                                                              // use user.home
         final String fileName = homeDir + "/" + "lines.txt";
         List<String> list = new ArrayList<>();
 
@@ -68,62 +69,6 @@ public class Soccer {
                 }
 
             }
-
-            // strings.stream().filter(line -> !line.isEmpty()).forEach(match ->
-            // {
-
-            //
-
-            // // リバプール 3, Манчестер Юнайтед 3
-
-            //
-
-            // String[] teams = match.split(",");
-
-            // String teamOne = teams[0].trim();
-
-            // String teamOneName = teamOne.substring(0,
-            // teamOne.lastIndexOf(" "));
-
-            // Integer score1 =
-            // Integer.valueOf(teamOne.substring(teamOne.lastIndexOf(" ") + 1));
-
-            //
-
-            // String teamTwo = teams[1].trim();
-
-            // String teamTwoName = teamTwo.substring(0,
-            // teamTwo.lastIndexOf(" "));
-
-            // Integer score2 =
-            // Integer.valueOf(teamTwo.substring(teamTwo.lastIndexOf(" ") + 1));
-
-            //
-
-            // if (score1.equals(score2)) {
-
-            // // draw
-
-            // populateResultsTable(new Result(teamOneName, score1), new
-            // Result(teamTwoName, score2));
-
-            // } else if (score1 > score2) {
-
-            // // team one wins
-
-            // populateResultsTable(new Result(teamOneName, score1));
-
-            // } else if (score2 > score1) {
-
-            // // team two wins
-
-            // populateResultsTable(new Result(teamTwoName, score2));
-
-            // }
-
-            //
-
-            // });
 
         } catch (IOException e) {
             e.printStackTrace();
